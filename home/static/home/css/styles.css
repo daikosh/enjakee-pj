@@ -4143,6 +4143,7 @@ textarea.form-control-lg {
   display: block;
 }
 
+
 .navbar {
   position: relative;
   display: flex;
@@ -11633,15 +11634,6 @@ body {
     border-width: 0.25rem;
     width: 30%;
   }
-}
-
-.about_us-section {
-  padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .team-member {
