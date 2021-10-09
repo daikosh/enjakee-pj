@@ -65,6 +65,31 @@
                 z-index: 9999;
                 width: 280px;
             }
+            /*1.フェードインアニメーションの指定*/
+            .scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
+            .fadeInDown {
+                animation-name: fadeInDown;
+                animation-duration: 5s;
+                animation-fill-mode: forwards;
+            }
+            @keyframes fadeInDown {
+                0% {
+                    opacity: 0;         
+                }
+                100% {
+                opacity: 1;
+                transform: translate(0);
+                }
+            }
+            
+            /*2.上下の動きを指定*/
+            .updown {transform: translateY(-100px);}
+            .downup {transform: translateY(100px);}
+            
+            /*3.左右の動きを指定*/
+            .sect02{overflow: hidden;} /*横スクロールバーを隠す*/
+            .slide-right {transform: translateX(200px);}
+            .slide-left {transform: translateX(-200px);}
         </style>
         
     </head>
@@ -103,6 +128,18 @@
                 setTimeout(function(){
                     $('.start').fadeOut(500);
                 },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+            });
+            $(function () {
+                $(window).scroll(function () {
+                    const wHeight = $(window).height();
+                    const scrollAmount = $(window).scrollTop();
+                    $('.scrollanime').each(function () {
+                        const targetPosition = $(this).offset().top;
+                        if(scrollAmount > targetPosition - wHeight + 60) {
+                            $(this).addClass("fadeInDown");
+                        }
+                    });
+                });
             });
         </script>
         
