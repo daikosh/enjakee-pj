@@ -4,8 +4,7 @@
 {% block main %}
 
 <section class="projects-section bg-light" id="projects">
-    <div class="container px-4 px-lg-5 bg-light">
-        Featured Project Row
+    <div class="container px-4 px-lg-5 bg-dark fadein">
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
             <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'assets/img/index/bg-masthead2.jpeg' %}" alt="..." /></div>
             <div class="col-xl-4 col-lg-5">
@@ -19,7 +18,7 @@
 
         <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 justify-content-center bg-light">
             <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
+                <div class="card h-100 shadow zoomin">
                     <img src="{% static 'assets/img/projects/logo_ann.png' %}" class="card-img-top img-fit-cover" alt="..." height=150>
                     <div class="card-body">
                         <h5 class="card-title text-center">TIMELINE</h5>
@@ -32,11 +31,12 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
+                <div class="card h-100 shadow-sm">
                     <img src="{% static 'assets/img/projects/logo_ann.png' %}" class="card-img-top img-fit-contain" alt="..." height=150>
                     <div class="card-body">
                         <h5 class="card-title text-center">マツイキョースケの<br>オールナイトニッポン</h5>
                         <p class="card-text small">毎回ステキなゲストとともにお送りしていきます！</p>
+                        <span class="badge bg-secondary">New</span> 
                         <a href="/projects/ann" class="stretched-link"></a>
                     </div>
                     <div class="card-footer">
@@ -45,7 +45,7 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-3">
-                <div class="card h-100">
+                <div class="card h-100 shadow-lg">
                     <img src="{% static 'assets/img/projects/logo_wanko.png' %}" class="card-img-top img-fit-cover" alt="..." height=150>
                     <div class="card-body">
                         <h5 class="card-title text-center">わんこ旅</h5>

@@ -18,12 +18,55 @@
         <link href="{% static 'home/css/styles.css' %}" rel="stylesheet" type="text/css" />
         <style>
             .bgcolor {
-                background-color: rgba(0,0,0,0.6);
+                background-color: transparent;
             }
             .bgcolor.scrolled {
-                background-color: blue;
+                background-color: rgba(0,0,0,0.6);
+            }
+            .fadein {
+                animation: fadeIn 3.0s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+            }
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
+            .zoomin {
+                animation: zoomIn 5.0s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
+            }
+            @keyframes zoomIn {
+                0% {
+                    transform: scale(0.8);
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            .start {
+                background: #FFF;
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: 9000;
+            }
+            .start p {
+                position: fixed;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                display: none;
+                z-index: 9999;
+                width: 280px;
             }
         </style>
+        
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -36,10 +79,14 @@
 
         <!-- Footer-->
         {% include "_footer.html" %}
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="{% static 'home/js/scripts.js' %}"></script>
+        <!-- jQuery from Google -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
@@ -47,8 +94,17 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
             $(window).scroll(function(){
-            $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+                $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
+            });
+            $(function() {
+                setTimeout(function(){
+                    $('.start p').fadeIn(1600);
+                },500); //0.5秒後にロゴをフェードイン!
+                setTimeout(function(){
+                    $('.start').fadeOut(500);
+                },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
             });
         </script>
+        
     </body>
 </html>
