@@ -6,7 +6,7 @@
 <section class="about-section" id="about_us">
     <div class="container bg-dark fadein">
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'assets/img/index/bg-masthead2.jpeg' %}" alt="..." /></div>
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/index/bg-masthead2.jpeg' %}" alt="..." /></div>
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center text-lg-left">
                     <h4>WHO WE ARE?</h4>
@@ -14,82 +14,74 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="container bg-dark">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Main Cast</h2>
             <h3 class="section-subheading text-muted">主役</h3>
         </div>
-        <div class="row">
-            <div class="col-6">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle img-fluid" src="{% static 'assets/img/aboutus/01_kyosuke.png' %}" alt="..." />
-                    <h4>Kyosuke Matsui</h4>
-                    <p class="text-muted">Bride</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2">
+            <div class="team-member scrollanime downup">
+                <img class="mx-auto rounded-circle img-fluid " src="{% static 'img/aboutus/01_kyosuke.png' %}" alt="..." />
+                <h4>Kyosuke Matsui</h4>
+                <p class="text-muted">Bride</p>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-6">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle img-fluid" src="{% static 'assets/img/aboutus/07_rikako.png' %}" alt="..." />
-                    <h4>Rikako Inukai</h4>
-                    <p class="text-muted">Groom</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="team-member scrollanime downup">
+                <img class="mx-auto rounded-circle img-fluid" src="{% static 'img/aboutus/07_rikako.png' %}" alt="..." />
+                <h4>Rikako Inukai</h4>
+                <p class="text-muted">Groom</p>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">おめでとうおめでとうおめでとう</p></div>
         </div>
     </div>
+       
+    </div>
 
-    <div class="container bg-light">
+    <div class="container bg-dark">
         <div class="text-center">
             <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
             <h3 class="section-subheading text-muted">同響グリークラブ 有志</h3>
         </div>
-        <div class="row">
-            <div class="col-md-6 col-lg-3">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="{% static 'assets/img/aboutus/05_akuzawa.png' %}" alt="..." width="200" height="200"/>
-                    <h4>Takuya Akuzawa</h4>
-                    <p class="text-muted">Director</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-sm-2 row-cols-lg-4">
+            <div class="team-member scrollanime downup">
+                <img class="mx-auto rounded-circle" src="{% static 'img/aboutus/05_akuzawa.png' %}" alt="..." width="200" height="200"/>
+                <h4>Takuya Akuzawa</h4>
+                <p class="text-muted">Director</p>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="{% static 'assets/img/aboutus/02_daikosh.png' %}" alt="..." />
-                    <h4>daikosh</h4>
-                    <p class="text-muted">Lead Engineer</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="team-member scrollanime downup">
+                <img class="mx-auto rounded-circle" src="{% static 'img/aboutus/02_daikosh.png' %}" alt="..." />
+                <h4>daikosh</h4>
+                <p class="text-muted">Lead Engineer</p>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="{% static 'assets/img/aboutus/04_rinrin.png' %}" alt="..." />
-                    <h4>Hiroto Hayashi</h4>
-                    <p class="text-muted">Sales Manager</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="team-member scrollanime downup">
+                <img class="mx-auto rounded-circle" src="{% static 'img/aboutus/04_rinrin.png' %}" alt="..." />
+                <h4>Hiroto Hayashi</h4>
+                <p class="text-muted">Sales Manager</p>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="team-member">
-                    <img class="mx-auto rounded-circle" src="{% static 'assets/img/aboutus/06_nobuaki.png' %}" alt="..." />
-                    <h4>Nobuaki Yoshitane</h4>
-                    <p class="text-muted">Patron</p>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+            <div class="team-member scrollanime downup">
+                <img class="mx-auto rounded-circle" src="{% static 'img/aboutus/06_nobuaki.png' %}" alt="..." />
+                <h4>Nobuaki Yoshitane</h4>
+                <p class="text-muted">Patron</p>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="#!"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <div class="row">

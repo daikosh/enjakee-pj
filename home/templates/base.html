@@ -8,7 +8,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" />
         <title>結婚式二次会特設サイト</title>
-        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
+        <link rel="icon" type="image/x-icon" href="{% static 'favicon.ico' %}" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -48,7 +48,7 @@
                 }
             }
             .start {
-                background: #FFF;
+                background: black;
                 position: fixed;
                 top: 0;
                 left: 0;
@@ -235,7 +235,7 @@
             $(function() {
                 setTimeout(function(){
                     $('.start p').fadeIn(1600);
-                },500); //0.5秒後にロゴをフェードイン!
+                },0); //0.5秒後にロゴをフェードイン!
                 setTimeout(function(){
                     $('.start').fadeOut(500);
                 },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
