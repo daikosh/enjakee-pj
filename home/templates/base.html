@@ -24,6 +24,18 @@
             .bgcolor.scrolled {
                 background-color: rgba(0,0,0,0.6);
             }
+            /* フェードイン */
+            .fadein {
+                animation: fadeIn 3.0s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
+            }
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
             /* オープニングロゴの表示 */
             .start {
                 background: black;
@@ -47,7 +59,7 @@
             .scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
             .fadeInDown {
                 animation-name: fadeInDown;
-                animation-duration: 3s;
+                animation-duration: 4.0s;
                 animation-fill-mode: forwards;
             }
             @keyframes fadeInDown {
@@ -218,7 +230,7 @@
                     $('.start').fadeOut(500);
                 },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
             });
-            // スクロール時にフェードイン
+            // スクロール時にアイテムをフェードイン
             $(function(){
                 $(window).on('load scroll',function (){
                     $('.scrollanime').each(function(){
