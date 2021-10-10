@@ -17,36 +17,14 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'home/css/styles.css' %}" rel="stylesheet" type="text/css" />
         <style>
+            /* スクロール時にnavbarの背景色を変更 */
             .bgcolor {
                 background-color: transparent;
             }
             .bgcolor.scrolled {
                 background-color: rgba(0,0,0,0.6);
             }
-            .fadein {
-                animation: fadeIn 3.0s cubic-bezier(0.33, 1, 0.68, 1) 1 forwards;
-            }
-            @keyframes fadeIn {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
-            .zoomin {
-                animation: zoomIn 5.0s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
-            }
-            @keyframes zoomIn {
-                0% {
-                    transform: scale(0.8);
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                    transform: scale(1);
-                }
-            }
+            /* オープニングロゴの表示 */
             .start {
                 background: black;
                 position: fixed;
@@ -69,7 +47,7 @@
             .scrollanime {opacity: 0;} /*一瞬表示されるのを防ぐ*/
             .fadeInDown {
                 animation-name: fadeInDown;
-                animation-duration: 5s;
+                animation-duration: 3s;
                 animation-fill-mode: forwards;
             }
             @keyframes fadeInDown {
@@ -240,19 +218,7 @@
                     $('.start').fadeOut(500);
                 },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
             });
-            // スクロール時にアイテムをフェードイン
-            // $(function () {
-            //     $(window).scroll(function () {
-            //         const wHeight = $(window).height();
-            //         const scrollAmount = $(window).scrollTop();
-            //         $('.scrollanime').each(function () {
-            //             const targetPosition = $(this).offset().top;
-            //             if(scrollAmount > targetPosition - wHeight) {
-            //                 $(this).addClass("fadeInDown");
-            //             }
-            //         });
-            //     });
-            // });
+            // スクロール時にフェードイン
             $(function(){
                 $(window).on('load scroll',function (){
                     $('.scrollanime').each(function(){
