@@ -196,9 +196,9 @@
             display : block;
             position: absolute;
             width   : 30px;
-            height  : 2px ;
+            height  : 1px ;
             left    : 6px;
-            background : #555;
+            background : white;
             -webkit-transition: 0.3s ease-in-out;
             -moz-transition   : 0.3s ease-in-out;
             transition        : 0.3s ease-in-out;
@@ -342,17 +342,17 @@
                     });
                 });
             });
-            // // スクロールしたときになめらかに移動
-            // $(function(){
-            //     $('a[href^=#]').click(function() {
-            //         var speed = 500; // スクロール速度(ミリ秒)
-            //         var href = $(this).attr("href");
-            //         var target = $(href == "#" || href == "" ? 'html' : href);
-            //         var position = target.offset().top;
-            //         $('html').animate({scrollTop:position}, speed, 'swing');
-            //         return false;
-            //     });
-            // });
+            // スクロールしたときになめらかに移動
+            $(function(){
+                $('a[href^=#]').click(function() {
+                    var speed = 500; // スクロール速度(ミリ秒)
+                    var href = $(this).attr("href");
+                    var target = $(href == "#" || href == "" ? 'html' : href);
+                    var position = target.offset().top;
+                    $('html').animate({scrollTop:position}, speed, 'swing');
+                    return false;
+                });
+            });
             
         </script>
         
