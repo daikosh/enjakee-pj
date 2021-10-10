@@ -17,6 +17,9 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'home/css/styles.css' %}" rel="stylesheet" type="text/css" />
         <style>
+            html {
+               -webkit-overflow-scrolling: touch;
+            }
             /* 全画面表示CSS */
             .hero {
             height: 100vh; /* 全画面表示 */
@@ -339,17 +342,17 @@
                     });
                 });
             });
-            // スクロールしたときになめらかに移動
-            $(function(){
-                $('a[href^=#]').click(function() {
-                    var speed = 500; // スクロール速度(ミリ秒)
-                    var href = $(this).attr("href");
-                    var target = $(href == "#" || href == "" ? 'html' : href);
-                    var position = target.offset().top;
-                    $('html').animate({scrollTop:position}, speed, 'swing');
-                    return false;
-                });
-            });
+            // // スクロールしたときになめらかに移動
+            // $(function(){
+            //     $('a[href^=#]').click(function() {
+            //         var speed = 500; // スクロール速度(ミリ秒)
+            //         var href = $(this).attr("href");
+            //         var target = $(href == "#" || href == "" ? 'html' : href);
+            //         var position = target.offset().top;
+            //         $('html').animate({scrollTop:position}, speed, 'swing');
+            //         return false;
+            //     });
+            // });
             
         </script>
         
