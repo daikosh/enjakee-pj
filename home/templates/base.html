@@ -90,6 +90,103 @@
             .sect02{overflow: hidden;} /*横スクロールバーを隠す*/
             .slide-right {transform: translateX(200px);}
             .slide-left {transform: translateX(-200px);}
+
+            /*　ハンバーガーボタン　*/
+            .hamburger {
+            display : block;
+            position: fixed;
+            z-index : 3;
+            right : 13px;
+            top   : 12px;
+            width : 42px;
+            height: 42px;
+            cursor: pointer;
+            text-align: center;
+            }
+            .hamburger span {
+            display : block;
+            position: absolute;
+            width   : 30px;
+            height  : 2px ;
+            left    : 6px;
+            background : #555;
+            -webkit-transition: 0.3s ease-in-out;
+            -moz-transition   : 0.3s ease-in-out;
+            transition        : 0.3s ease-in-out;
+            }
+            .hamburger span:nth-child(1) {
+            top: 10px;
+            }
+            .hamburger span:nth-child(2) {
+            top: 20px;
+            }
+            .hamburger span:nth-child(3) {
+            top: 30px;
+            }
+
+            /* ナビ開いてる時のボタン */
+            .hamburger.active span:nth-child(1) {
+            top : 16px;
+            left: 6px;
+            background :#fff;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform   : rotate(-45deg);
+            transform        : rotate(-45deg);
+            }
+
+            .hamburger.active span:nth-child(2),
+            .hamburger.active span:nth-child(3) {
+            top: 16px;
+            background :#fff;
+            -webkit-transform: rotate(45deg);
+            -moz-transform   : rotate(45deg);
+            transform        : rotate(45deg);
+            }
+
+            nav.globalMenuSp {
+            position: fixed;
+            z-index : 2;
+            top  : 0;
+            left : 0;
+            color: #fff;
+            background: rgba(0,0,0,0.7);
+            text-align: center;
+            width: 100%;
+            opacity: 0;
+            transition: opacity .6s ease, visibility .6s ease;
+            }
+
+            nav.globalMenuSp ul {
+            margin: 0 auto;
+            padding: 0;
+            width: 100%;
+            }
+
+            nav.globalMenuSp ul li {
+            list-style-type: none;
+            padding: 0;
+            width: 100%;
+            transition: .4s all;
+            }
+            nav.globalMenuSp ul li:last-child {
+            padding-bottom: 0;
+            }
+            nav.globalMenuSp ul li:hover{
+            background :#ddd;
+            }
+
+            nav.globalMenuSp ul li a {
+            display: block;
+            color: #fff;
+            padding: 1em 0;
+            text-decoration :none;
+            }
+
+            /* このクラスを、jQueryで付与・削除する */
+            nav.globalMenuSp.active {
+            opacity: 100;
+
+            }
         </style>
         
     </head>
@@ -118,9 +215,23 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
+            // スクロール時にnavbarの背景色を変更
             $(window).scroll(function(){
                 $('nav').toggleClass('scrolled', $(this).scrollTop() > 50);
             });
+            // ハンバーガーボタン挙動
+            $(function() {
+                $('.hamburger').click(function() {
+                    $(this).toggleClass('active');
+            
+                    if ($(this).hasClass('active')) {
+                        $('.globalMenuSp').addClass('active');
+                    } else {
+                        $('.globalMenuSp').removeClass('active');
+                    }
+                });
+            });
+            // オープニングにロゴを表示
             $(function() {
                 setTimeout(function(){
                     $('.start p').fadeIn(1600);
@@ -129,18 +240,37 @@
                     $('.start').fadeOut(500);
                 },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
             });
-            $(function () {
-                $(window).scroll(function () {
-                    const wHeight = $(window).height();
-                    const scrollAmount = $(window).scrollTop();
-                    $('.scrollanime').each(function () {
-                        const targetPosition = $(this).offset().top;
-                        if(scrollAmount > targetPosition - wHeight + 60) {
-                            $(this).addClass("fadeInDown");
+            // スクロール時にアイテムをフェードイン
+            // $(function () {
+            //     $(window).scroll(function () {
+            //         const wHeight = $(window).height();
+            //         const scrollAmount = $(window).scrollTop();
+            //         $('.scrollanime').each(function () {
+            //             const targetPosition = $(this).offset().top;
+            //             if(scrollAmount > targetPosition - wHeight) {
+            //                 $(this).addClass("fadeInDown");
+            //             }
+            //         });
+            //     });
+            // });
+            $(function(){
+                $(window).on('load scroll',function (){
+                    $('.scrollanime').each(function(){
+                        //ターゲットの位置を取得
+                        var target = $(this).offset().top;
+                        //スクロール量を取得
+                        var scroll = $(window).scrollTop();
+                        //ウィンドウの高さを取得
+                        var height = $(window).height();
+                        //ターゲットまでスクロールするとフェードインする
+                        if (scroll > target - height){
+                            //クラスを付与
+                            $(this).addClass('fadeInDown');
                         }
                     });
                 });
             });
+            // スクロールしたときになめらかに移動
             $(function(){
                 $('a[href^=#]').click(function() {
                     var speed = 500; // スクロール速度(ミリ秒)
@@ -151,6 +281,7 @@
                     return false;
                 });
             });
+            
         </script>
         
     </body>
