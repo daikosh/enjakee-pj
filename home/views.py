@@ -19,6 +19,9 @@ class TimelineView(TemplateView):
 class AnnView(TemplateView):
     template_name = 'ann.html'
 
+class Ann1View(TemplateView):
+    template_name = 'ann/ann1.html'
+
 class WankoView(TemplateView):
     template_name = 'wanko.html'
 

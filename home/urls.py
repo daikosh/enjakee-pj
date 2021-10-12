@@ -1,16 +1,16 @@
 from django.urls import path
-from .views import IndexView, ProjectsView, AboutusView, ContactView
-from .views import TimelineView, AnnView, WankoView, Ann0View, NyankoView
+from . import views
 
 
 urlpatterns = [
-    path('', IndexView.as_view()),
-    path('projects/', ProjectsView.as_view()),
-    path('aboutus/', AboutusView.as_view()),
-    path('contact/', ContactView.as_view()),
-    path('projects/timeline/', TimelineView.as_view()),
-    path('projects/ann/', AnnView.as_view()),
-    path('projects/wanko/', WankoView.as_view()),
-    path('projects/ann0/', Ann0View.as_view()),
-    path('projects/nyanko/', NyankoView.as_view()),
+    path('', views.IndexView.as_view()),
+    path('projects/', views.ProjectsView.as_view()),
+    path('aboutus/', views.AboutusView.as_view()),
+    path('contact/', views.ContactView.as_view()),
+    path('projects/timeline/', views.TimelineView.as_view()),
+    path('projects/ann/', views.AnnView.as_view()),
+    path('projects/ann/1', views.Ann1View.as_view()),
+    path('projects/wanko/', views.WankoView.as_view()),
+    path('projects/ann0/', views.Ann0View.as_view()),
+    path('projects/nyanko/', views.NyankoView.as_view()),
 ]
