@@ -4396,11 +4396,7 @@ textarea.form-control-lg {
 /* ナビゲーションバーテキスト */
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.8);
-}
-
-.nav-link.active {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.6);
+  background: blue;
 }
 
 /* ナビゲーションバーテキスト 選択時 */
@@ -11363,7 +11359,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../../img/index/bg-masthead4.jpeg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../../img/index/bg-masthead4.5ab0d14ce0dc.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11417,7 +11413,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../../img/index/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../../img/index/bg-signup.5ac05903cff7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
