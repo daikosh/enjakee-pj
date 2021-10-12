@@ -182,7 +182,7 @@ display : block;
 position: fixed;
 z-index : 3;
 right : 13px;
-top   : 12px;
+top   : 16px;
 width : 42px;
 height: 42px;
 cursor: pointer;

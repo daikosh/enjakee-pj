@@ -9,10 +9,8 @@ $(function() {
 
         if ($(this).hasClass('active')) {
             $('.nav-link').addClass('active');
-            $('.nav').addClass('scrolled');
         } else {
             $('.nav-link').removeClass('active');
-            $('.nav').removeClass('scrolled');
         }
     });
 });
