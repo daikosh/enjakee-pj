@@ -14,19 +14,40 @@ class ContactView(TemplateView):
     template_name = 'contact.html'
 
 class TimelineView(TemplateView):
-    template_name = 'timeline.html'
+    template_name = 'projects/timeline.html'
 
 class AnnView(TemplateView):
-    template_name = 'ann.html'
+    template_name = 'projects/ann.html'
 
 class Ann1View(TemplateView):
-    template_name = 'ann/ann1.html'
+    template_name = 'projects/ann/1.html'
+
+class Ann2View(TemplateView):
+    template_name = 'projects/ann/2.html'
+
+class Ann3View(TemplateView):
+    template_name = 'projects/ann/3.html'
+
+class Ann4View(TemplateView):
+    template_name = 'projects/ann/4.html'
 
 class WankoView(TemplateView):
-    template_name = 'wanko.html'
+    template_name = 'projects/wanko.html'
 
 class Ann0View(TemplateView):
-    template_name = 'ann0.html'
-    
+    template_name = 'projects/ann0.html'
+
+class Ann01View(TemplateView):
+    template_name = 'projects/ann0/1.html'
+
+class Ann02View(TemplateView):
+    template_name = 'projects/ann0/2.html'
+
+class Ann03View(TemplateView):
+    template_name = 'projects/ann0/3.html'
+
+class Ann04View(TemplateView):
+    template_name = 'projects/ann0/4.html'
+
 class NyankoView(TemplateView):
-    template_name = 'nyanko.html'
+    template_name = 'projects/nyanko.html'
