@@ -46,6 +46,18 @@ class Ann4View(TemplateView):
 class WankoView(TemplateView):
     template_name = 'projects/wanko.html'
 
+class Wanko1View(TemplateView):
+    template_name = 'projects/wanko/1.html'
+
+class Wanko2View(TemplateView):
+    template_name = 'projects/wanko/2.html'
+
+class Wanko3View(TemplateView):
+    template_name = 'projects/wanko/3.html'
+
+class Wanko4View(TemplateView):
+    template_name = 'projects/wanko/4.html'
+
 class Ann0View(TemplateView):
     template_name = 'projects/ann0.html'
 
