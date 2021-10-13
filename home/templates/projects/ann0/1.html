@@ -3,9 +3,24 @@
 
 {% block content %}
 
+<div class="container p-1 p-sm-3 p-lg-5 fadein wrap">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/projects/ann0">ANN0</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">#1</li>
+                </ol>
+            </nav>         
+        </div>
+    </div>
+</div>
+
 <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
-    <h1>#1 「恥ずかしながら帰ってまいりました。」</h1>
-    <h3>出演: 阿久澤、松岡、林、松井</h3>
+    <h3>#1 「恥ずかしながら帰ってまいりました。」</h3>
+    <h4>出演: 阿久澤、松岡、林、松井</h4>
     <img src="{% static 'img/projects/ann0/radio1.jpg' %}" class="img-fluid">
 
     <audio src="https://docs.google.com/uc?export=download&id=1J3JJB2iu1YsrvZkr3V1FSYx96Gpuj-ZA" type="audio/m4a" controls></audio>

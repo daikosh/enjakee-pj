@@ -3,9 +3,24 @@
 
 {% block content %}
 
+<div class="container p-1 p-sm-3 p-lg-5 fadein wrap">
+    <div class="row">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="/">Home</a></li>
+                    <li class="breadcrumb-item"><a href="/projects/ann0">ANN0</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">#2</li>
+                </ol>
+            </nav>         
+        </div>
+    </div>
+</div>
+
 <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
-    <h1>#2 「〈TL第1章〉楽器を始めてなかった頃。」</h1>
-    <h3>出演: 犬飼、松井、松岡、阿久澤</h3>
+    <h3>#2 「〈TL第1章〉楽器を始めてなかった頃。」</h3>
+    <h4>出演: 犬飼、松井、松岡、阿久澤</h4>
     <img src="{% static 'img/projects/ann0/radio2.png' %}" class="img-fluid">
 
     <audio src="https://docs.google.com/uc?export=download&id=1MI7ZfCUW08aWqCh8Oe-J9PU4lTIEfeNF" type="audio/mp3" controls></audio>
