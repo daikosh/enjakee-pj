@@ -57,7 +57,7 @@ $(function(){
       var itemLength = selectors.item.length;
       $(window).scroll(function() {
         var max, min;
-        var pos = $(this).scrollTop() + 500;
+        var pos = $(this).scrollTop() + 250;
         selectors.item.each(function(i) {
           min = $(this).offset().top;
           max = ($(this).height() + $(this).offset().top);
