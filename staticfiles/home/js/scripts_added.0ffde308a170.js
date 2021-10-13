@@ -57,12 +57,12 @@ $(function(){
       var itemLength = selectors.item.length;
       $(window).scroll(function() {
         var max, min;
-        var pos = $(this).scrollTop() + 500;
+        var pos = $(this).scrollTop();
         selectors.item.each(function(i) {
           min = $(this).offset().top;
           max = ($(this).height() + $(this).offset().top);
           var that = $(this)
-          if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          if (i == itemLength - 2 && pos > min + $(this).height()) {
             selectors.item.removeClass(selectors.activeClass);
             selectors.id.css("background-image", "url(" + selectors.item.last().find(selectors.img).attr('src') + ")");
             selectors.item.last().addClass(selectors.activeClass)
