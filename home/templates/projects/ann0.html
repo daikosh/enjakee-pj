@@ -4,11 +4,21 @@
 {% block main %}
 
 <section class="projects-section" id="ann0">
-    <div class="container text-center fadein wrap">
-        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann0/logo_ann0.png' %}" alt="..."/>
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ANN0</li>
+            </ol>
+        </nav>         
     </div>
+    
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann0/logo_ann0.jpg' %}" alt="..."/>
+    </div>
+
     <div class="container text-center text-white-50 p-1 p-sm-3 p-lg-5 fadein wrap">
-        <div class="row gx-0 mb-4 mb-lg-5 mt-1 align-items-center">
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
             <div class="col-1"></div>
             <div class="col-10 col-md-4">
                 <h6>
@@ -45,29 +55,31 @@
             </div>
         </div>
 
-        <div class="sidescroll">
+        <div class="sidescroll text-black">
             <ul>
                 <li>
                     <div class="card h-100 fadein">
-                        <img src="{% static 'img/projects/ann0/radio4.png' %}" class="card-img-top img-fit-contain" alt="...">
+                        <img src="{% static 'img/projects/ann0/radio4.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
-                            #4
+                            <div class="card-text">#4 〈TL第3章〉理香子との出会い。</div>
                             <a href="/projects/ann0/4" class="stretched-link"></a>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="card h-100 fadein">
-                        <img src="{% static 'img/projects/ann0/radio3.png' %}" class="card-img-top img-fit-contain" alt="...">
+                        <img src="{% static 'img/projects/ann0/radio3.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
+                            <div class="card-text">#3〈TL第2章〉楽器との出会い。</div>
                             <a href="/projects/ann0/3" class="stretched-link"></a>
                         </div>
                     </div>
                 </li>
                 <li>
                     <div class="card h-100 fadein">
-                        <img src="{% static 'img/projects/ann0/radio2.png' %}" class="card-img-top img-fit-contain" alt="...">
+                        <img src="{% static 'img/projects/ann0/radio2.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
+                            <div class="card-text">#2〈TL第1章〉楽器を始めてなかった頃。</div>
                             <a href="/projects/ann0/2" class="stretched-link"></a>
                         </div>
                     </div>
@@ -76,6 +88,7 @@
                     <div class="card h-100 fadein">
                         <img src="{% static 'img/projects/ann0/radio1.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
+                            <div class="card-text">#1 恥ずかしながら帰ってまいりました。</div>
                             <a href="/projects/ann0/1" class="stretched-link"></a>
                         </div>
                     </div>

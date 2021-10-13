@@ -1,35 +1,29 @@
-{% extends "projects/ann0/base_ann0.html" %}
+{% extends "base.html" %}
 {% load static %}
 
-{% block content %}
+{% block main %}
 
-<div class="container p-1 p-sm-3 p-lg-5 fadein wrap">
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/projects/ann0">ANN0</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">#4</li>
-                </ol>
-            </nav>         
-        </div>
+<section class="projects-section" id="ann0">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann0">ANN0</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#4</li>
+            </ol>
+        </nav>  
     </div>
-</div>
-
-<div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
-
-    <h3>#4 </h3>
-    <h4>出演<br>
-
-    </h4>
-    <img src="{% static 'img/projects/ann0/radio4.png' %}" class="img-fluid">
-
-
-    <audio src="https://docs.google.com/uc?export=download&id=1hQupwJ8zDNQczPpBBAmviHdyt8YTNmpU" type="audio/mp3" controls></audio>
-
-</div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann0/logo_ann0.jpg' %}" alt="..."/>
+    </div>
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#4 </h3>
+        <h4>出演: </h4>
+        <img src="{% static 'img/projects/ann0/radio4.jpg' %}" class="img-fluid">
+    
+        <audio src="https://docs.google.com/uc?export=download&id=1HCzVWmAVVFlSa1zZiUCq1fC65iFmCx2s" type="audio/mp3" controls></audio>
+    </div>
 
 
+</section>
 {% endblock %}

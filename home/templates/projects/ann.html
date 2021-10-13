@@ -4,11 +4,19 @@
 {% block main %}
 
 <section class="projects-section" id="ann">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ANN</li>
+            </ol>
+        </nav>
+    </div>
     <div class="container text-center fadein wrap">
-        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.png' %}" alt="..." />
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.jpg' %}" alt="..." />
     </div>
 
-    <div class="container text-center text-black-50 p-1 p-sm-3 p-lg-5 fadein wrap">
+    <div class="container text-center text-white-50 p-1 p-sm-3 p-lg-5 fadein wrap">
         <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
             <div class="col-1 col-lg-2"></div>
             <div class="col-10 col-lg-8">
@@ -24,12 +32,13 @@
                 </div>
             </div>
         </div>
-        <div class="sidescroll">
+        <div class="sidescroll text-black">
             <ul>
                 <li>
                     <div class="card h-100 fadein">
                         <img src="{% static 'img/projects/ann/radio4.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
+                            <div class="card-text">#4 幹事長スペシャル</div>
                             <a href="/projects/ann/4" class="stretched-link"></a>
                         </div>
                     </div>
@@ -38,6 +47,7 @@
                     <div class="card h-100 fadein">
                         <img src="{% static 'img/projects/ann/radio3.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
+                            <div class="card-text">#3 聴取率を爆上げしたいので、弦のカリスマをゲストに呼びました。</div>
                             <a href="/projects/ann/3" class="stretched-link"></a>
                         </div>
                     </div>
@@ -46,6 +56,7 @@
                     <div class="card h-100 fadein">
                         <img src="{% static 'img/projects/ann/radio2.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
+                            <div class="card-text">#2 珍名字東京大決戦〜城之内死す〜</div>
                             <a href="/projects/ann/2" class="stretched-link"></a>
                         </div>
                     </div>
@@ -54,6 +65,7 @@
                     <div class="card h-100 fadein">
                         <img src="{% static 'img/projects/ann/radio1.jpg' %}" class="card-img-top img-fit-contain" alt="...">
                         <div class="card-body">
+                            <div class="card-text">#1 人材紹介業Feeとりがち〜そうだ、顎削ろう〜</div>
                             <a href="/projects/ann/1" class="stretched-link"></a>
                         </div>
                     </div>

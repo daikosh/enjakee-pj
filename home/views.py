@@ -16,6 +16,18 @@ class ContactView(TemplateView):
 class TimelineView(TemplateView):
     template_name = 'projects/timeline.html'
 
+class Timeline1View(TemplateView):
+    template_name = 'projects/timeline/1.html'
+
+class Timeline2View(TemplateView):
+    template_name = 'projects/timeline/2.html'
+
+class Timeline3View(TemplateView):
+    template_name = 'projects/timeline/3.html'
+
+class Timeline4View(TemplateView):
+    template_name = 'projects/timeline/4.html'
+
 class AnnView(TemplateView):
     template_name = 'projects/ann.html'
 

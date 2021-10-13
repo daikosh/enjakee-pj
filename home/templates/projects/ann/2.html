@@ -1,33 +1,33 @@
-{% extends "projects/ann/base_ann.html" %}
+{% extends "base.html" %}
 {% load static %}
 
-{% block content %}
+{% block main %}
 
-<div class="container p-1 p-sm-3 p-lg-5 fadein wrap">
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/projects/ann">ANN</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">#2</li>
-                </ol>
-            </nav>         
-        </div>
+<section class="projects-section" id="ann">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann">ANN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#2</li>
+            </ol>
+        </nav>    
     </div>
-</div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.jpg' %}" alt="..." />
+    </div>
 
-<div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
-    <h3>#2 「珍名字東京大決戦〜城之内死す〜」</h3>
-    <h4>
-        ゲスト: 阿久澤拓也、吉種伸彰<br>
-        (2021.6.12 収録)
-    </h4>
-    <img src="{% static 'img/projects/ann/radio2.jpg' %}" class="img-fluid">
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#2 「珍名字東京大決戦〜城之内死す〜」</h3>
+        <h4>
+            ゲスト: 阿久澤拓也、吉種伸彰<br>
+            (2021.6.12 収録)
+        </h4>
+        <img src="{% static 'img/projects/ann/radio2.jpg' %}" class="img-fluid">
+    
+        <audio src="https://docs.google.com/uc?export=download&id=1ypMNkoYdHSkGyfttYuPSkDHkzB9W0okU" type="audio/mp3" controls></audio>
+    </div>
 
-    <audio src="https://docs.google.com/uc?export=download&id=1ypMNkoYdHSkGyfttYuPSkDHkzB9W0okU" type="audio/mp3" controls></audio>
-</div>
 
-
+</section>
 {% endblock %}

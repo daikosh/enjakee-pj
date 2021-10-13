@@ -1,30 +1,29 @@
-{% extends "projects/ann0/base_ann0.html" %}
+{% extends "base.html" %}
 {% load static %}
 
-{% block content %}
+{% block main %}
 
-<div class="container p-1 p-sm-3 p-lg-5 fadein wrap">
-    <div class="row">
-        <div class="col-1"></div>
-        <div class="col-10">
-            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item"><a href="/projects/ann0">ANN0</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">#2</li>
-                </ol>
-            </nav>         
-        </div>
+<section class="projects-section" id="ann0">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann0">ANN0</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#2</li>
+            </ol>
+        </nav>  
     </div>
-</div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann0/logo_ann0.jpg' %}" alt="..."/>
+    </div>
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#2 「〈TL第1章〉楽器を始めてなかった頃。」</h3>
+        <h4>出演: 犬飼、松井、松岡、阿久澤</h4>
+        <img src="{% static 'img/projects/ann0/radio2.jpg' %}" class="img-fluid">
+    
+        <audio src="https://docs.google.com/uc?export=download&id=1MI7ZfCUW08aWqCh8Oe-J9PU4lTIEfeNF" type="audio/mp3" controls></audio>
+    </div>
 
-<div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
-    <h3>#2 「〈TL第1章〉楽器を始めてなかった頃。」</h3>
-    <h4>出演: 犬飼、松井、松岡、阿久澤</h4>
-    <img src="{% static 'img/projects/ann0/radio2.png' %}" class="img-fluid">
 
-    <audio src="https://docs.google.com/uc?export=download&id=1MI7ZfCUW08aWqCh8Oe-J9PU4lTIEfeNF" type="audio/mp3" controls></audio>
-</div>
-
-
+</section>
 {% endblock %}
