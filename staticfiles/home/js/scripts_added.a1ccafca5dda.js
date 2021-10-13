@@ -57,16 +57,22 @@ $(function(){
       var itemLength = selectors.item.length;
       $(window).scroll(function() {
         var max, min;
-        var pos = $(this).scrollTop() + 300;
+        var pos = $(this).scrollTop() + 200;
+        //ターゲットの位置を取得
+        var target = $(this).offset().top;
+        //スクロール量を取得
+        var scroll = $(window).scrollTop();
+        //ウィンドウの高さを取得
+        var height = $(window).height();
         selectors.item.each(function(i) {
           min = $(this).offset().top;
           max = ($(this).height() + $(this).offset().top);
           var that = $(this)
-          if (i == itemLength - 2 && pos > min + $(this).height() / 2) {
+          if (scroll > target - height) {
             selectors.item.removeClass(selectors.activeClass);
             selectors.id.css("background-image", "url(" + selectors.item.last().find(selectors.img).attr('src') + ")");
             selectors.item.last().addClass(selectors.activeClass)
-          } else if (pos <= max - 40 && pos >= min) {
+          } else {
               selectors.id.css("background-image", "url(" + $(this).find(selectors.img).attr('src') + ")");
               selectors.item.removeClass(selectors.activeClass);
               $(this).addClass(selectors.activeClass);
