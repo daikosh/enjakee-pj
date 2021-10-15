@@ -1,77 +1,92 @@
 from django.views.generic import TemplateView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth.views import LoginView, LogoutView
+from .forms import LoginForm
 
 
-class IndexView(TemplateView):
+# class Top(TemplateView):
+#     template_name = 'register/top.html'
+
+class Login(LoginView):
+    """ログインページ"""
+    form_class = LoginForm
+    template_name = 'register/login.html'
+
+class Logout(LogoutView):
+    """ログアウトページ"""
+    template_name = 'register/login.html'
+
+class IndexView(LoginRequiredMixin, TemplateView):
     template_name = 'index.html'
 
-class ProjectsView(TemplateView):
+class ProjectsView(LoginRequiredMixin, TemplateView):
     template_name = 'projects.html'
 
-class AboutusView(TemplateView):
+class AboutusView(LoginRequiredMixin, TemplateView):
     template_name = 'aboutus.html'
 
-class ContactView(TemplateView):
+class ContactView(LoginRequiredMixin, TemplateView):
     template_name = 'contact.html'
 
-class TimelineView(TemplateView):
+class TimelineView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/timeline.html'
 
-class Timeline1View(TemplateView):
+class Timeline1View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/timeline/1.html'
 
-class Timeline2View(TemplateView):
+class Timeline2View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/timeline/2.html'
 
-class Timeline3View(TemplateView):
+class Timeline3View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/timeline/3.html'
 
-class Timeline4View(TemplateView):
+class Timeline4View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/timeline/4.html'
 
-class AnnView(TemplateView):
+class AnnView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann.html'
 
-class Ann1View(TemplateView):
+class Ann1View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann/1.html'
 
-class Ann2View(TemplateView):
+class Ann2View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann/2.html'
 
-class Ann3View(TemplateView):
+class Ann3View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann/3.html'
 
-class Ann4View(TemplateView):
+class Ann4View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann/4.html'
 
-class WankoView(TemplateView):
+class WankoView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/wanko.html'
 
-class Wanko1View(TemplateView):
+class Wanko1View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/wanko/1.html'
 
-class Wanko2View(TemplateView):
+class Wanko2View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/wanko/2.html'
 
-class Wanko3View(TemplateView):
+class Wanko3View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/wanko/3.html'
 
-class Wanko4View(TemplateView):
+class Wanko4View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/wanko/4.html'
 
-class Ann0View(TemplateView):
+class Ann0View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann0.html'
 
-class Ann01View(TemplateView):
+class Ann01View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann0/1.html'
 
-class Ann02View(TemplateView):
+class Ann02View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann0/2.html'
 
-class Ann03View(TemplateView):
+class Ann03View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann0/3.html'
 
-class Ann04View(TemplateView):
+class Ann04View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann0/4.html'
 
-class NyankoView(TemplateView):
+class NyankoView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/nyanko.html'

@@ -50,6 +50,8 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    # 'home.middleware.login.LoginRequiredMiddleware',
+    # 'global_login_required.GlobalLoginRequiredMiddleware',
 ]
 
 ROOT_URLCONF = 'pj_rikakyon.urls'
@@ -124,9 +126,13 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL ='/login/'
+LOGIN_URL = 'home:login'
+LOGIN_REDIRECT_URL = 'home:index'
+# LOGOUT_REDIRECT_URL ='home:login'
+# PUBLIC_PATHS = [
+# 	'/login/',  # ディレクトリごと除外することも可能
+# ]
+
 
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # SECURE_SSL_REDIRECT = False

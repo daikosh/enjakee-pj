@@ -1,0 +1,38 @@
+{% extends "register/base.html" %}
+{% load static %}
+
+{% block main %}
+
+
+<!-- About-->
+<section class="about-section text-center" id="home">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-lg-8">
+                <h2 class="text-white">結婚式2次会特設サイト</h2>
+                <img class="img-fluid img-fit-contain fadein", src="{% static 'img/index/loginpage.jpg' %}" alt="">
+                <p class="text-white-50 mt-5 fadein">
+                    こちらは招待者専用のホームページです。URLやログイン情報は絶対に流出させないでください。
+                </p>
+            </div>
+        </div>
+        <form action="" method="POST">
+            <div class="col-md-6 offset-md-3">
+                <div class="card bg-black fadein">
+                    <div class="card-body">
+                        {{ form.non_field_errors }}
+                        {% for field in form %}
+                            {{ field }}
+                            {{ field.errors }}
+                            <hr>
+                        {% endfor %}
+                        <button type="submit" class="btn btn-dark" >ログイン</button>
+                        <input type="hidden" name="next" value="{{ next }}" />
+                        {% csrf_token %}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+{% endblock %}
