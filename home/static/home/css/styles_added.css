@@ -408,7 +408,7 @@ height: 100vh;
 position: fixed;
 top: 0;
 width: 100%;
-z-index: 999999;
+z-index: 5;
 }
 .close-btn{
 text-align: right;
@@ -425,7 +425,7 @@ width: 100%;
 .modal-box{
 background: #fff;
 left: 50%;
-padding: 16px;
+padding: 8px;
 position: absolute;
 top: 50%;
 transform: translate(-50%,-50%);
@@ -439,7 +439,7 @@ width: 65%;
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
 
 .frame-wrapper__video iframe {
