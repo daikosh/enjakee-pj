@@ -19,7 +19,7 @@ height: 100vh; /* 全画面表示 */
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
-background-image: url("../../img/index/bg-masthead4.jpeg");
+background-image: url("../../img/index/bg-masthead4.5ab0d14ce0dc.jpeg");
 }
 
 /* 黒の背景 */
@@ -246,7 +246,7 @@ transform        : rotate(45deg);
   transition: .4s;
   padding: 0 10px;
   box-sizing: border-box;
-  font-family: "YuMin-Medium", "M+ 1p", "メイリオ", sans-serif;
+  font-family: "M+ 1p", "メイリオ", sans-serif;
   color: #fff;
 }
 .timeline__content-desc {
@@ -254,7 +254,7 @@ transform        : rotate(45deg);
   font-size: 18px;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.7);
-  font-family: "YuMin-Medium", "M+ 1p", "メイリオ", sans-serif;
+  font-family: "M+ 1p", "メイリオ", sans-serif;
   font-weight: normal;
   line-height: 25px;
 }
@@ -290,7 +290,7 @@ transform        : rotate(45deg);
   position: absolute;
   color: rgba(255, 255, 255, 0.5);
   font-size: 18px;
-  font-family: "YuMin-Medium", "M+ 1p", "メイリオ", sans-serif;
+  font-family: "M+ 1p", "メイリオ", sans-serif;
   border-left: 2px solid rgba(255, 255, 255, 0.5);
   top: 70%;
   margin-top: -5px;
@@ -370,13 +370,13 @@ transform        : rotate(45deg);
 .timeline-header__title {
   color: #fff;
   font-size: 46px;
-  font-family: "YuMin-Medium", "M+ 1p", "メイリオ", sans-serif;
+  font-family: "M+ 1p", "メイリオ", sans-serif;
   font-weight: normal;
   margin: 0;
 }
 .timeline-header__subtitle {
   color: rgba(255, 255, 255, 0.5);
-  font-family: "YuMin-Medium", "M+ 1p", "メイリオ", sans-serif;
+  font-family: "M+ 1p", "メイリオ", sans-serif;
   font-size: 16px;
   letter-spacing: 5px;
   margin: 10px 0 0 0;
@@ -390,7 +390,7 @@ transform        : rotate(45deg);
 .demo-footer a {
   color: #999;
   display: inline-block;
-  font-family: "YuMin-Medium", "M+ 1p", "メイリオ", sans-serif;
+  font-family: "M+ 1p", "メイリオ", sans-serif;
 }
 
 .main-text {

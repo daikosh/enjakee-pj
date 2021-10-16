@@ -4,22 +4,27 @@
 {% block main %}
 <div class="hero overlay">
     <div class="text-box">
-        <h1 class="text-white text-center">ほんまに俺で<br class="d-lg-none">ええんですか？</h1>
+        <h1 class="text-white text-center main-text">待たせたな。</h1>
     </div>
-    <a href="/#home" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
+    <a href="/index/#home" class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon=""></a>
 </div>
 
 <!-- About-->
 <section class="about-section text-center" id="home">
+    <iframe src="https://drive.google.com/file/d/1q-K0BZhff486u1Sjxb87cWm_oNpF5lJF/preview" width="640" height="480" allow="autoplay"></iframe>
     <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-lg-8">
                 <h2 class="text-white">EN-JAKEE PROJECT</h2>
                 <img class="img-fluid img-fit-contain scrollanime downup", src="{% static 'img/index/logo_enjakee.png' %}" alt="" width=500>
                 <p class="text-white-50 mt-5 scrollanime downup">
-                    響介&理香子 結婚式二次会特設サイトにアクセスいただきありがとうございます。<br class="d-none d-lg-inline"><br class="d-none d-lg-inline">
-                    二次会に参加する人もしない人も楽しんで頂けるようなコンテンツを配信していきます。<br class="d-none d-lg-inline"><br class="d-none d-lg-inline">
-                    要望、リクエスト等があれば是非LINEへメッセージを送ってください。<br class="d-none d-lg-inline"><br><br>
+                    結婚式二次会特設サイトにアクセスいただきありがとうございます。<br class="d-none d-lg-inline"><br class="d-none d-lg-inline">
+                    <br class="d-none d-lg-inline">
+                    「縁じゃけえプロジェクト (EN-JAKEE PJ)」とは、<br class="d-none d-lg-inline">
+                    響介&理香子の結婚式二次会の運営および当日までの士気を高めるためのコンテンツをご提供する<br class="d-none d-lg-inline">
+                    一年限定のプロジェクトです。
+                    <br class="d-none d-lg-inline">
+                    <br><br>
                     運営メンバー　一同
                 </p>
             </div>
@@ -37,7 +42,9 @@
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center p-3">
                     <h4 class="text-white">PROJECTS</h4>
-                    <h6 class="text-white-50">楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。</h6>
+                    <h6 class="text-white-50">
+                        縁じゃけえPJでは、二次会に参加する人もしない人も楽しんで頂けるようなコンテンツを配信しています。
+                    </h6>
                 </div>
             </div>
         </div>
@@ -47,7 +54,7 @@
                 <div class="card h-100 scrollanime downup">
                     <img src="{% static 'img/projects/logo_tljakee.png' %}" class="card-img-top img-fit-contain" alt="...">
                     <div class="card-body">
-                        <h6 class="card-text small">二人の軌跡をみていきましょう。</h6>
+                        <h4 class="card-text small">TIMELINE</h4>
                         <a href="/projects/timeline" class="stretched-link"></a>
                     </div>
                 </div>
@@ -56,7 +63,7 @@
                 <div class="card h-100 scrollanime downup">
                     <img src="{% static 'img/projects/logo_koejakee.png' %}" class="card-img-top img-fit-contain" alt="...">
                     <div class="card-body">
-                        <h6 class="card-text small">毎回ステキなゲストとともにお送りしていきます！</h6>
+                        <h4 class="card-text small">マツイキョースケ<br>の<br>オールナイトニッポン</h4>
                         <span class="badge bg-secondary">New</span> 
                         <a href="/projects/ann" class="stretched-link"></a>
                     </div>
@@ -66,7 +73,7 @@
                 <div class="card h-100 scrollanime downup">
                     <img src="{% static 'img/projects/logo_inujakee.png' %}" class="card-img-top img-fit-contain" alt="...">
                     <div class="card-body">
-                        <h6 class="card-text small">ファインダー越しの理香子の世界をお楽しみください🐶</h6>
+                        <h4 class="card-text small">わんこ旅</h4>
                         <a href="/projects/wanko" class="stretched-link"></a>
                     </div>
                 </div>
@@ -75,7 +82,7 @@
                 <div class="card h-100 scrollanime downup">
                     <img src="{% static 'img/projects/logo_nekojakee.png' %}" class="card-img-top img-fit-contain" alt="...">
                     <div class="card-body">
-                        <h6 class="card-text small">癒やされるにゃんこたちを公開中です。</h6>
+                        <h4 class="card-text small">みんなのにゃんこ</h4>
                         <a href="/projects/nyanko" class="stretched-link"></a>
                     </div>
                 </div>
@@ -84,7 +91,7 @@
                 <div class="card h-100 scrollanime downup">
                     <img src="{% static 'img/projects/logo_glee.png' %}" class="card-img-top img-fit-contain" alt="...">
                     <div class="card-body">
-                        <h6 class="card-text small">いざ立て、戦人よ。</h6>
+                        <h4 class="card-text small">同響グリークラブ<br>の<br>オールナイトニッポン0</h4>
                         <a href="/projects/ann0" class="stretched-link"></a>
                     </div>
                 </div>
@@ -103,7 +110,10 @@
             <div class="col-xl-4 col-lg-5">
                 <div class="featured-text text-center p-3">
                     <h4 class="text-white">WHO ARE WE?</h4>
-                    <h6 class="text-white-50">楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。楽しいコンテンツをお届け。</h6>
+                    <h6 class="text-white-50">
+                        私達は、「」を合言葉に、結婚式の成功・男女平等・小室圭さんを応援するクリエイティブ集団です。
+                        
+                    </h6>
                 </div>
             </div>
         </div>
@@ -141,7 +151,7 @@
                 <div class="col-6 col-lg-3 scrollanime downup my-3">
                     <img class="mx-auto img-fluid rounded-circle border border-light" src="{% static 'img/aboutus/05_akuzawa.png' %}" alt="..."/>
                     <h4 class="text-white mt-3">Takuya<br class="d-lg-none">Akuzawa</h4>
-                    <h6 class="text-muted mb-3">Director & Producer</h6>
+                    <h6 class="text-muted mb-3">Producer</h6>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://twitter.com/0akzw9" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.facebook.com/Takuya.Akuzawa09" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.instagram.com/akzw_06/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -149,7 +159,7 @@
                 <div class="col-6 col-lg-3 scrollanime downup my-3">
                     <img class="mx-auto img-fluid rounded-circle border border-light" src="{% static 'img/aboutus/02_daikosh.png' %}" alt="..." />
                     <h4 class="text-white mt-3">daikosh</h4>
-                    <h6 class="text-muted mb-3">Web Engineer & Designer</h6>
+                    <h6 class="text-muted mb-3">Web Engineer</h6>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://twitter.com/daikosh"><i class="fab fa-twitter" target="_blank" rel="noopener noreferrer"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.facebook.com/daikosh" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.instagram.com/daikosh/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -157,7 +167,7 @@
                 <div class="col-6 col-lg-3 scrollanime downup my-3">
                     <img class="mx-auto img-fluid rounded-circle border border-light" src="{% static 'img/aboutus/04_rinrin.png' %}" alt="..." />
                     <h4 class="text-white mt-3">Hiroto<br class="d-lg-none">Hayashi</h4>
-                    <h6 class="text-muted mb-3">Sales<br class="d-lg-none">Manager</h6>
+                    <h6 class="text-muted mb-3">Manager</h6>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="#!"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.facebook.com/hiroto.hayashi.980" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.instagram.com/lin_rin_/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
@@ -165,54 +175,12 @@
                 <div class="col-6 col-lg-3 scrollanime downup my-3">
                     <img class="mx-auto img-fluid rounded-circle border border-light" src="{% static 'img/aboutus/06_nobuaki.png' %}" alt="..." />
                     <h4 class="text-white mt-3">Nobuaki<br class="d-lg-none">Yoshitane</h4>
-                    <h6 class="text-muted mb-3">Patron</h6>
+                    <h6 class="text-muted mb-3">Squirter</h6>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://twitter.com/seed297" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.facebook.com/n.yoshitane" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                     <a class="btn btn-light btn-social mx-0 mx-sm-1 mx-md-2" href="https://www.instagram.com/tane_stagram/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-<!-- Contact-->
-<section class="contact-section bg-black" id="contact">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5">
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Address</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50">4923 Market Street, Orlando FL</div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-envelope text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Email</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50"><a>rikakyon.wedding@gmail.com</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-3 mb-md-0">
-                <div class="card py-4 h-100">
-                    <div class="card-body text-center">
-                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                        <h4 class="text-uppercase m-0">Phone</h4>
-                        <hr class="my-4 mx-auto" />
-                        <div class="small text-black-50">080 1234 5678</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="social d-flex justify-content-center">
-            <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
-            <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
         </div>
     </div>
 </section>
