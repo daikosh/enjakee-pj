@@ -81,15 +81,40 @@ $(function(){
 
 
 // モーダルウィンドウ
-var v = document.getElementById("video");
-$(function(){
-window.onload = function(){
-$('.modal').fadeIn();
-return false;
+//IFrame Player API の読み込み
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+//YouTubeの埋め込み
+var ytPlayer;
+function onYouTubeIframeAPIReady() {
+	ytPlayer = new YT.Player('movie-content01', {
+		width: 800,
+		height: 450,
+		videoId: 'ZRCdORJiUgU',
+		events: {
+			'onReady': onPlayerReady,
+		},
+		playerVars: {
+			rel: 0, //再生動画と同じチャンネルから関連動画を選択
+			modestbranding: 1 //YouTubeロゴを表示しない
+		}
+	});
 }
-$('.close-btn').on('click',function(){
-v.pause();
-$('.modal').fadeOut();
-return false;
-});
+
+function onPlayerReady(event) {
+	event.target.mute(); //音声をミュートに
+	event.target.playVideo(); //動画再生
+}
+
+$(function() {
+	$.magnificPopup.open({
+		items: {
+			src: '#movie01'
+		},
+		mainClass: 'mfp-fade01',
+		removalDelay: 200
+	});
 });

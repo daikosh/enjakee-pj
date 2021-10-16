@@ -78,3 +78,18 @@ $(function(){
     }
   })(jQuery);
   $("#timeline-1").timeline();
+
+
+// モーダルウィンドウ
+var v = document.getElementById("video");
+$(function(){
+window.onload = function(){
+$('.modal').fadeIn();
+return false;
+}
+$('.close-btn').on('click',function(){
+v.pause();
+$('.modal').fadeOut();
+return false;
+});
+});

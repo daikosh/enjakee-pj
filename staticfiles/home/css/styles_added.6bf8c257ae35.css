@@ -19,7 +19,7 @@ height: 100vh; /* 全画面表示 */
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
-background-image: url("../../img/index/bg-masthead4.jpeg");
+background-image: url("../../img/index/bg-masthead4.5ab0d14ce0dc.jpeg");
 }
 
 /* 黒の背景 */
@@ -397,55 +397,81 @@ transform        : rotate(45deg);
   font-family: "游明朝体 ミディアム", "YuMin-Medium", "MS明朝", serif;
 }
 
-/* モーダルウィンドウ */
-@charset "UTF-8";
 
-/*modal*/
 
-.modal{
-display: none;
-height: 100vh;
-position: fixed;
-top: 0;
-width: 100%;
-z-index: 999999;
+
+/*========= モーダル表示のためのCSS ===============*/
+
+/*動画表示のモーダルの余白を変更したい場合*/
+.modaal-video .modaal-inner-wrapper{
+  padding:0;
 }
-.close-btn{
-text-align: right;
-text-decoration: none;
-font-size: 1.8rem;
-color: #666;
+
+/*モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+  background:#ccc;  
 }
-.modal-bg{
-background: rgba(0,0,0,0.8);
-height: 100vh;
-position: absolute;
-width: 100%;
-}
-.modal-box{
-background: #fff;
-left: 50%;
-padding: 16px;
-position: absolute;
-top: 50%;
-transform: translate(-50%,-50%);
-width: 65%;
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+  background:#666;
 }
 
 
-.frame-wrapper__video {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-  overflow: hidden;
-  margin-bottom: 50px;
+/*========= レイアウトのためのCSS ===============*/
+
+header{
+  background: #333;
 }
 
-.frame-wrapper__video iframe {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+h1{
+  font-size:1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #fff;
+}
+
+h2{
+  font-size:1.2rem;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+ul{
+  list-style: none;
+}
+
+p,ul{
+  margin-top:20px;  
+}
+
+a{
+  color:#333;
+    outline: none;
+}
+
+small{
+  background:#333;
+  color:#fff;
+  display: block;
+  text-align: center;
+  padding:20px;
+}
+
+
+section{
+  padding:30px;
+}
+
+section:nth-child(2n){
+  background:#f3f3f3; 
+}
+
+img{
+  max-width: 100%;
+  height: auto;
 }

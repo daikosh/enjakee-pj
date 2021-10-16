@@ -19,7 +19,7 @@ height: 100vh; /* 全画面表示 */
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
-background-image: url("../../img/index/bg-masthead4.jpeg");
+background-image: url("../../img/index/bg-masthead4.5ab0d14ce0dc.jpeg");
 }
 
 /* 黒の背景 */
@@ -448,4 +448,34 @@ width: 65%;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+/* 予告動画サムネイル */
+.movie-content-wrap {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+}
+.movie-content-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.movie-content-wrap img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+.sp-spacer {
+	display: none;
+	width: 1px;
+	height: 1px;
+}
+@media screen and (max-width: 768px) {
+	.sp-spacer {
+		display: block;
+	}
 }

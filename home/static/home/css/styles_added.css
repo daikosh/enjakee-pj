@@ -396,3 +396,56 @@ transform        : rotate(45deg);
 .main-text {
   font-family: "游明朝体 ミディアム", "YuMin-Medium", "MS明朝", serif;
 }
+
+/* モーダルウィンドウ */
+@charset "UTF-8";
+
+/*modal*/
+
+.modal{
+display: none;
+height: 100vh;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 999999;
+}
+.close-btn{
+text-align: right;
+text-decoration: none;
+font-size: 1.8rem;
+color: #666;
+}
+.modal-bg{
+background: rgba(0,0,0,0.8);
+height: 100vh;
+position: absolute;
+width: 100%;
+}
+.modal-box{
+background: #fff;
+left: 50%;
+padding: 16px;
+position: absolute;
+top: 50%;
+transform: translate(-50%,-50%);
+width: 65%;
+}
+
+
+.frame-wrapper__video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.frame-wrapper__video iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
