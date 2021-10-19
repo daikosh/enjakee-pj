@@ -79,17 +79,18 @@ $(function(){
   })(jQuery);
   $("#timeline-1").timeline();
 
-
-// モーダルウィンドウ
-var v = document.getElementById("video");
-$(function(){
-window.onload = function(){
-$('.modal').fadeIn();
-return false;
-}
-$('.close-btn').on('click',function(){
-v.pause();
-$('.modal').fadeOut();
-return false;
-});
+// Trailer用
+$(function() {
+	$(".movie-thumb").on("click", function(){
+		if($('.sp-spacer').is(':visible')){
+			window.open('https://drive.google.com/file/d/1q-K0BZhff486u1Sjxb87cWm_oNpF5lJF/preview','_blank');
+		} else {
+			videoControl("playVideo",$(this).prev("iframe"));
+			$(this).hide();
+		}
+	});
+	function videoControl(action,tgt){
+		var $playerWindow = $(tgt)[0].contentWindow;
+		$playerWindow.postMessage('{"event":"command","func":"'+action+'","args":""}', '*');
+	}
 });

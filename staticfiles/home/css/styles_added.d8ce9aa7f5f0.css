@@ -19,7 +19,7 @@ height: 100vh; /* 全画面表示 */
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center center;
-background-image: url("../../img/index/bg-masthead4.jpeg");
+background-image: url("../../img/index/bg-masthead4.5ab0d14ce0dc.jpeg");
 }
 
 /* 黒の背景 */
@@ -404,8 +404,7 @@ transform        : rotate(45deg);
   height: 0;
   padding-bottom: 56.25%;
   overflow: hidden;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .frame-wrapper__video iframe {
@@ -419,7 +418,7 @@ transform        : rotate(45deg);
 .movie-content-wrap {
 	position: relative;
 	width: 100%;
-	padding-top: 56.25%;
+	padding-top: 6.25%;
 }
 .movie-content-wrap iframe {
 	position: absolute;

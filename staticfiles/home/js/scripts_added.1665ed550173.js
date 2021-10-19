@@ -83,7 +83,7 @@ $(function(){
 $(function() {
 	$(".movie-thumb").on("click", function(){
 		if($('.sp-spacer').is(':visible')){
-			window.open('https://drive.google.com/file/d/1q-K0BZhff486u1Sjxb87cWm_oNpF5lJF/preview','_blank');
+			window.open('https://www.youtube.com/embed/ZRCdORJiUgU?rel=0&autoplay=1','_blank');
 		} else {
 			videoControl("playVideo",$(this).prev("iframe"));
 			$(this).hide();
