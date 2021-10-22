@@ -414,6 +414,7 @@ transform        : rotate(45deg);
   position: absolute;
   top: 0;
   left: 0;
+  border: 0;
 }
 
 .movie-content-wrap {
