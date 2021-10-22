@@ -14,6 +14,7 @@ $(function() {
         }
     });
 });
+
 // オープニングにロゴを表示
 $(function() {
     setTimeout(function(){
@@ -23,6 +24,7 @@ $(function() {
         $('.start').fadeOut(500);
     },2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 });
+
 // スクロール時にアイテムをフェードイン
 $(function(){
     $(window).on('load scroll', function(){
@@ -53,7 +55,7 @@ $(function(){
       };
       selectors.item.eq(0).addClass(selectors.activeClass);
       selectors.id.css("background-image", "url(" + selectors.item.first().find(selectors.img).attr("src") + ")");
-  
+
       var itemLength = selectors.item.length;
       $(window).scroll(function() {
         var max, min;
@@ -82,12 +84,8 @@ $(function(){
 // Trailer用
 $(function() {
 	$(".movie-thumb").on("click", function(){
-		if($('.sp-spacer').is(':visible')){
-			window.open('https://drive.google.com/file/d/1q-K0BZhff486u1Sjxb87cWm_oNpF5lJF/preview','_blank');
-		} else {
-			videoControl("playVideo",$(this).prev("iframe"));
-			$(this).hide();
-		}
+        videoControl("playVideo",$(this).prev("iframe"));
+        $(this).hide();
 	});
 	function videoControl(action,tgt){
 		var $playerWindow = $(tgt)[0].contentWindow;

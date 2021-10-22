@@ -434,13 +434,3 @@ transform        : rotate(45deg);
 	left: 0;
 	cursor: pointer;
 }
-.sp-spacer {
-	display: none;
-	width: 1px;
-	height: 1px;
-}
-@media screen and (max-width: 768px) {
-	.sp-spacer {
-		display: block;
-	}
-}
