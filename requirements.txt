@@ -1,3 +1,32 @@
-django
-gunicorn
-whitenoise
+asgiref @ file:///home/conda/feedstock_root/build_artifacts/asgiref_1605523041333/work
+boto3 @ file:///home/conda/feedstock_root/build_artifacts/boto3_1634945752138/work
+botocore @ file:///home/conda/feedstock_root/build_artifacts/botocore_1634933868378/work
+brotlipy==0.7.0
+certifi==2021.10.8
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1625835350093/work
+chardet @ file:///Users/runner/miniforge3/conda-bld/chardet_1610093454858/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1626371162869/work
+click @ file:///Users/runner/miniforge3/conda-bld/click_1621503850566/work
+cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography_1616851494586/work
+dj-database-url==0.5.0
+Django @ file:///home/conda/feedstock_root/build_artifacts/django_1612176192526/work
+django-anymail==7.0.0
+django-extensions @ file:///home/conda/feedstock_root/build_artifacts/django-extensions_1618863301971/work
+django-glrm==1.1.3
+django-storages @ file:///home/conda/feedstock_root/build_artifacts/django-storages_1634470792811/work
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1609836280497/work
+jmespath @ file:///home/conda/feedstock_root/build_artifacts/jmespath_1589369830981/work
+psycopg2 @ file:///Users/runner/miniforge3/conda-bld/psycopg2-split_1620868734363/work
+psycopg2-binary==2.9.1
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1608055815057/work
+PySocks @ file:///Users/runner/miniforge3/conda-bld/pysocks_1610291460269/work
+python-dateutil @ file:///home/conda/feedstock_root/build_artifacts/python-dateutil_1626286286081/work
+python-dotenv @ file:///home/conda/feedstock_root/build_artifacts/python-dotenv_1627149776321/work
+pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1612179539967/work
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1626393743643/work
+s3transfer @ file:///home/conda/feedstock_root/build_artifacts/s3transfer_1626384238958/work
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sqlparse @ file:///home/conda/feedstock_root/build_artifacts/sqlparse_1602142927465/work
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1632350318291/work
+whitenoise @ file:///home/conda/feedstock_root/build_artifacts/whitenoise_1626463713199/work
