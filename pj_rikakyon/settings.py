@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -128,11 +129,18 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGIN_URL = 'home:login'
 LOGIN_REDIRECT_URL = 'home:index'
-# LOGOUT_REDIRECT_URL ='home:login'
-# PUBLIC_PATHS = [
-# 	'/login/',  # ディレクトリごと除外することも可能
-# ]
-
 
 # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # SECURE_SSL_REDIRECT = False
+
+AWS_ACCESS_KEY_ID = 'AKIAWSOP5QUDZM2F2SRE'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'enjakee-pj'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400', 
+}
+
+AWS_LOCATION = 'media'
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
