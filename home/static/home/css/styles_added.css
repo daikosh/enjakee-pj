@@ -518,3 +518,11 @@ transform        : rotate(45deg);
 	left: 0;
 	cursor: pointer;
 }
+
+video {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
