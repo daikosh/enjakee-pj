@@ -1,0 +1,354 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="timeline">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/timeline">TIMELINE</a></li>
+                <li class="breadcrumb-item active" aria-current="page">第2章</li>
+            </ol>
+        </nav>  
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/timeline/logo_timeline.jpg' %}" alt="..."/>
+    </div>
+
+    <div class="timeline-container text-white" id="timeline-1">
+        <div class="timeline-header">
+            <h2 class="timeline-header__title">第2章 中高生編</h2>
+            <h3 class="timeline-header__subtitle"></h3>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content"><img class="timeline__img" src="{% static 'img/projects/timeline/2/01.jpg' %}"/>
+                    <h2 class="timeline__content-title">2006</h2>
+                    <h3>修道中学・高等学校 入学</h3>
+                    <p class="timeline__content-desc">
+                        初めて修道の制服を着た日。全力で邪魔する三男。受験期にコンビニ弁当ばかり食べてたこともあってやや太った時期。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/02.jpg' %}"/>
+                    <h2 class="timeline__content-title">2006</h2>
+                    <p class="timeline__content-desc">
+                        入学式にて。同じ小学校出身の4人で。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/03.jpg' %}"/>
+                    <h2 class="timeline__content-title">2007</h2>
+                    <h3>同志社女子中学・高等学校 入学</h3>
+                    <p class="timeline__content-desc">
+                        オケ人生のスタートを切る。冬にマイ楽器を手に入れ、ボロボロの団楽器から開放される。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/03-1.jpg' %}"/>
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/03-2.jpg' %}"/>
+                    <h2 class="timeline__content-title">2007</h2>
+                    <p class="timeline__content-desc">
+                        マンドリン部の姉が、いつのまにかマンドリンからベースになっていた。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/04.jpg' %}"/>
+                    <h2 class="timeline__content-title">2007</h2>
+                    <p class="timeline__content-desc">
+                        部活動もとい班活動はスクールバンド班。
+                        想像以上の名門で入班した時にはすでに広島厚生年金会館 (収容人数2,001人) で2日公演 (サマーコンサート、通称サマコン) をするような団体だった。
+                        写真は中2、ディズニーメドレーにて小人役だった時。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/05.jpg' %}"/>
+                    <h2 class="timeline__content-title">2007</h2>
+                    <p class="timeline__content-desc">
+                        母といった京都旅行。
+                        このときは同志社に入るとは微塵も思っていなかった。
+                        というより多分存在を知らなかった。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/06.jpg' %}"/>
+                    <h2 class="timeline__content-title">2008</h2>
+                    <p class="timeline__content-desc">
+                        中学2年生。希望者から選抜の語学研修でオーストラリアへ行く。英語が得意だった頃。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/07.jpg' %}"/>
+                    <h2 class="timeline__content-title">2008</h2>
+                    <p class="timeline__content-desc">
+                        中3夏のコンクール。中3メンバーで。
+                        スクバン史上初の中学チーム中国大会金賞獲得！
+                        課題曲Ⅲ『セリオーソ』、自由曲『映画音楽「栄光への脱出 (EXODUS)」ハイライト』
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/08.jpg' %}"/>
+                    <h2 class="timeline__content-title">2008</h2>
+                    <p class="timeline__content-desc">
+                        文化祭における中学生のメインイベントは合唱祭 (もちろん男声合唱)。
+                        それぞれ学年ごとに課題曲が決められていた。
+                        中3の課題曲は同響グリーでもお馴染みの『いざたて戦人よ』。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/09.jpg' %}"/>
+                    <h2 class="timeline__content-title">2008</h2>
+                    <p class="timeline__content-desc">
+                        中3時にアンサンブルコンテスト全国大会に出場。親子揃っての出場ということで中国新聞に乗った時の写真 (父は職場部門)。
+                        曲目は金管8重奏のど定番『テレプシコーレ無曲集』
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/10.jpg' %}"/>
+                    <h2 class="timeline__content-title">2009</h2>
+                    <p class="timeline__content-desc">
+                        定期演奏会で人生初の京コンでの演奏会を経験。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/11.jpg' %}"/>
+                    <h2 class="timeline__content-title">2009</h2>
+                    <p class="timeline__content-desc">
+                        ピアノの先生が近所のお寺などでミニコンサートを行うようになり、発表会等でもオーボエ出演をお誘いいただくようになる。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/12.jpg' %}"/>
+                    <h2 class="timeline__content-title">2009</h2>
+                    <p class="timeline__content-desc">
+                        数少ないクラス写真。教育実習生と。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/13.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        オーボエパート過疎期。
+                        このうち3人も部長になり同響に入るなんて誰が想像しただろうか。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/14.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        高校1年生。同女の一大イベント、体育祭・文化祭・合唱コンと毎日連続するお祭り期間。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/15.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        大学今出川組は卒業式をしたであろうあの栄光館は演奏するには狭い上に劣悪な環境だった。 (当時はクーラーがなかった為)
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/16.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        中3頃から毎年のように学校帰りに浴衣に着替えて祇園祭に行くようになる。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/17.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        高2時にはサマコン実行委員長に。リーダー特権で嵐のセンターをいただく。。。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/18.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        高2体育祭での応援合戦。最初で最後の学ラン。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/19.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        吹奏楽コンクールでは高1、高2と運良く全国大会に出場。
+                        憧れの『普門館』(吹奏楽の甲子園と呼ばれていた) で演奏できたのは一生の思い出。
+                        高1: 課題曲Ⅲ『ネストリアン・モニュメント』、自由曲『バレエ音楽「ダフニスとクロエ」より』
+                        高2: 課題曲Ⅴ『吹奏楽のためのスケルツォ第2番《夏》』、自由曲『「トゥーランドット」より』
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/19-2.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        閉鎖的に思われる男子校の中でも吹奏楽コミュニティは意外と広かった。写真は私学祭の合同バンドより。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="阿部寛">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/20.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        東野圭吾の人気推理小説シリーズを映像化した「新参者」シリーズで、主人公の刑事・加賀恭一郎を演じる。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/21.jpg' %}"/>
+                    <h2 class="timeline__content-title">2011</h2>
+                    <p class="timeline__content-desc">
+                        高校2年生。マンモス部活の管弦楽部部長として君臨する。
+                        リトリートセンターでの夏合宿は快適合宿ライフ。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/22.jpg' %}"/>
+                    <h2 class="timeline__content-title">2011</h2>
+                    <p class="timeline__content-desc">
+                        最も信頼のおける総勢20人の同輩達。仲が良く、団結力と推進力ある学年だったと自負している。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/23.jpg' %}"/>
+                    <h2 class="timeline__content-title">2011</h2>
+                    <p class="timeline__content-desc">
+                        みんなご存知〇〇〇さん。部活終わり散々何十分も今出川駅交差点で立ち話して帰った記憶。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/24.jpg' %}"/>
+                    <h2 class="timeline__content-title">2011</h2>
+                    <p class="timeline__content-desc">
+                        男子校クオリティの汚いプリクラ。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/25.jpg' %}"/>
+                    <h2 class="timeline__content-title">2011</h2>
+                    <p class="timeline__content-desc">
+                        三年連続全国大会出場 (通称三出) を目指して臨んだ高3コンクール。夢は儚くも散った。
+                        課題曲Ⅴ『「薔薇戦争」より 戦場にて』、自由曲『交響曲 (矢代秋雄) より』
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/26.jpg' %}"/>
+                    <h2 class="timeline__content-title">2012</h2>
+                    <p class="timeline__content-desc">
+                        高校3年生。もうそろそろ学力的に選抜は無理だろうと諦めかけていたイギリス語学研修の切符をまさかの掴む。
+                        ロンドンオリンピックの時期 (ホームステイ先にテレビなく全く見れなかった)。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/27.jpg' %}"/>
+                    <h2 class="timeline__content-title">2012</h2>
+                    <p class="timeline__content-desc">
+                        中3、高1、高3と合唱コンでピアノ伴奏する。
+                        部活付でずっとなかなかできなかった体育祭・文化祭・クリスマスページェントなどの行事の委員や合唱に積極的に参加。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/28.jpg' %}"/>
+                    <h2 class="timeline__content-title">2012</h2>
+                    <p class="timeline__content-desc">
+                        卒業アルバム。6年8組。修道の集大成感があり感慨深い。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/29.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        吹奏楽漬けの6年間が終了。受験モードへの切り替えができず浪人。
+                        浪人中に神頼みのため出雲大社へ。第一志望には見事に落ちた。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/2/30.jpg' %}"/>
+                    <h2 class="timeline__content-title">2010</h2>
+                    <p class="timeline__content-desc">
+                        高3ラストの定演は人生2度目の京コン。
+                        新世界でアングレを吹くが本番で初めて水が詰まり高音が出なくなる。
+                        アングレ恐怖症の始まり。
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="To be continued...">
+                <div class="timeline__content">
+                    <img class="timeline__img" src=""/>
+                    <h2 class="timeline__content-title"></h2>
+                    <p class="timeline__content-desc">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
