@@ -20,10 +20,9 @@
         <link href="{% static 'home/css/styles_added.css' %}" rel="stylesheet" type="text/css" />
         <!-- TIMELINE用SCSS -->
         <!-- <link href="{% static 'home/scss/style.scss' %}" rel="stylesheet" type="text/scss" /> -->
-        <style>
-
-
-        </style>
+        {% if GOOGLE_ANALYTICS_TRACKING_ID %}
+            {% include '../ga.html' %}
+        {% endif %}
         
     </head>
     <body id="page-top" class="bg-black">        
