@@ -3,6 +3,9 @@
 
 <html lang="ja">
     <head>
+        {% if GOOGLE_ANALYTICS_TRACKING_ID %}
+            {% include 'ga.html' %}
+        {% endif %}
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -18,17 +21,6 @@
         <link href="{% static 'home/css/styles.css' %}" rel="stylesheet" type="text/css" />
         <!-- オリジナルCSS -->
         <link href="{% static 'home/css/styles_added.css' %}" rel="stylesheet" type="text/css" />
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-1JJFTNJVJ1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-1JJFTNJVJ1');
-        </script>
-
     </head>
     <body id="page-top">
         <!-- Navigation -->
