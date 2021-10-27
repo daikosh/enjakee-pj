@@ -65,6 +65,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django_blog.context_processors.google_analytics',
             ],
         },
     },
@@ -127,8 +128,11 @@ if not DEBUG:
 
     AWS_S3_FILE_OVERWRITE = False
     AWS_DEFAULT_ACL = None
+
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
     SECURE_SSL_REDIRECT = False
+
+    GOOGLE_ANALYTICS_TRACKING_ID='G-1JJFTNJVJ1'
 else:
     STATIC_URL = '/static/'
     STATIC_ROOT = os.path.join(BASE_DIR, 'static')
