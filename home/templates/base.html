@@ -3,20 +3,15 @@
 
 <html lang="ja">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-X31FYEHVGT"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-X31FYEHVGT');  
-            gtag('config', 'UA-211280917-1');
-        </script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+
+        {% if GOOGLE_ANALYTICS_TRACKING_ID %}
+            {% include 'ga.html' %}
+        {% endif %}
+
         <title>結婚式二次会特設サイト</title>
         <link rel="icon" type="image/png" href="{% static 'img/index/logo_enjakee.png' %}" />
         <!-- Font Awesome icons (free version) -->
