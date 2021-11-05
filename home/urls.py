@@ -21,6 +21,7 @@ urlpatterns = [
     path('projects/ann/2/', views.Ann2View.as_view()),
     path('projects/ann/3/', views.Ann3View.as_view()),
     path('projects/ann/4/', views.Ann4View.as_view()),
+    path('projects/ann/5/', views.Ann5View.as_view()),
     path('projects/wanko/', views.WankoView.as_view()),
     path('projects/wanko/1/', views.Wanko1View.as_view()),
     path('projects/wanko/2/', views.Wanko2View.as_view()),

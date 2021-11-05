@@ -58,6 +58,9 @@ class Ann3View(LoginRequiredMixin, TemplateView):
 class Ann4View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann/4.html'
 
+class Ann5View(LoginRequiredMixin, TemplateView):
+    template_name = 'projects/ann/5.html'
+
 class WankoView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/wanko.html'
 
