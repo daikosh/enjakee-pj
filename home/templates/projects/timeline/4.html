@@ -1,0 +1,198 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="timeline">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/timeline">TIMELINE</a></li>
+                <li class="breadcrumb-item active" aria-current="page">第4章</li>
+            </ol>
+        </nav>  
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/timeline/logo_timeline.jpg' %}" alt="..."/>
+    </div>
+
+    <div class="timeline-container text-white" id="timeline-1">
+        <div class="timeline-header">
+            <h2 class="timeline-header__title">第4章 大学2回生編</h2>
+            <h3 class="timeline-header__subtitle"></h3>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/01-1.jpg' %}"/>
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/01-2.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014</h2>
+                    <p class="timeline__content-desc">
+                        【アマーク】
+                        空きコマや練習前に何度通ったであろう大学のアマーク。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/02.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014.6.11</h2>
+                    <p class="timeline__content-desc">
+                        【理香子バースデー】
+                        バースデーディナー。京都のおいしいイタリアンレストラン「閏」へ。ハイネケンで顔真っ赤な人。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/03.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014.6.15</h2>
+                    <p class="timeline__content-desc">
+                        【同立交歓演奏会＠東京】
+                        1番の遠出のお出かけは同立交歓演奏会時の東京。隙間時間でどこかに行ったか記憶すらもない。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="阿部寛">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/04.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014</h2>
+                    <p class="timeline__content-desc">
+                        『テルマエ・ロマエII』で、古代ローマ帝国の浴場設計技師にして主人公・ルシウス役を演じる。
+                        映画のキャッチコピーは「また、来ちゃった。」「世紀のSF（すごい風呂）超大作」。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/05.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014.7</h2>
+                    <p class="timeline__content-desc">
+                        【祇園祭】
+                        唯一のプリクラ。誰。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/06-1.jpg' %}"/>
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/06-2.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014</h2>
+                    <p class="timeline__content-desc">
+                        【ユニバ】
+                        ハリーポッターエリアが完成した年。絶叫系大好き芸人と乗り物酔い激しめ芸人。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/07.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014.11.3</h2>
+                    <p class="timeline__content-desc">
+                        【定期演奏会】
+                        現田先生指揮で謝肉祭、眠れる森の美女、悲愴プログラム。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/08.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014.11</h2>
+                    <p class="timeline__content-desc">
+                        【アートアクアリウム】
+                        二条城で行われていたアートアクアリウムへ。いつも寒い時期に光るものを見に行っては寒さに凍えていた。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/09.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014.11</h2>
+                    <p class="timeline__content-desc">
+                        【青蓮院のバイト】
+                        バイオリンみおちゃんの誘いで同響数名、2か月ほど京都の青蓮院のバイトをしていた、普通は私服でよいはずなのだが...
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/10-1.jpg' %}"/>
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/10-2.jpg' %}"/>
+                    <h2 class="timeline__content-title">2014.12.25</h2>
+                    <p class="timeline__content-desc">
+                        【クリスマスデート＠京都水族館】
+                        メサイア演奏会翌日、疲れているので近場の京都市水族館へ。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/11-1.jpg' %}"/>
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/11-2.jpg' %}"/>
+                    <h2 class="timeline__content-title">2015.1</h2>
+                    <p class="timeline__content-desc">
+                        【初詣・成人式】
+                        すっかり正月ムードも収まった頃に空きコマで北野天満宮へ。成人式はそれぞれ母校で。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/12.jpg' %}"/>
+                    <h2 class="timeline__content-title">2015</h2>
+                    <p class="timeline__content-desc">
+                        東京の次に遠出した三重のなばなの里。寒かった。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/13.jpg' %}"/>
+                    <h2 class="timeline__content-title">2015.2.14</h2>
+                    <p class="timeline__content-desc">
+                        【響介バースデー＠神戸】
+                        北野異人館の近くにあったダルビッシュの資料館。ユニフォームを着てまるでテツandトモ。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介&理香子">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/14-1.jpg' %}"/>
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/14-4.jpg' %}"/>
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/14-5.jpg' %}"/>
+                    <h2 class="timeline__content-title">2015.2.14</h2>
+                    <p class="timeline__content-desc">
+                        神戸のクルーズ船ディナー。頑張ってアルバムを作ってみたが一回でギブアップ。
+                    </p>
+                </div>
+            </div>
+            <div class="timeline-item" data-text="響介">
+                <div class="timeline__content">
+                    <img class="timeline__img" src="{% static 'img/projects/timeline/4/15.jpg' %}"/>
+                    <h2 class="timeline__content-title">2015.3</h2>
+                    <p class="timeline__content-desc">
+                        【卒団コンパ】
+                        同響グリー最盛期。
+                    </p>
+                </div>
+            </div>
+
+            <div class="timeline-item" data-text="To be continued...">
+                <div class="timeline__content">
+                    <img class="timeline__img" src=""/>
+                    <h2 class="timeline__content-title"></h2>
+                    <p class="timeline__content-desc">
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
