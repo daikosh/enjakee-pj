@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="ann">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann">ANN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#6</li>
+            </ol>
+        </nav>    
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.jpg' %}" alt="..." />
+    </div>
+
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#6 かりんこやすのミドリびいき</h3>
+        <h4>
+            メインパーソナリティー: 子安夏琳 (木管楽器セクションリーダー)
+            ゲスト: 松井正太郎 (弦楽器セクションリーダー) 、松井響介 (金管・打楽器セクションリーダー)<br>
+            (2021.11.20 収録) <br><br>
+        </h4>
+        <img src="{% static 'img/projects/ann/radio6.jpg' %}" class="img-fluid">
+        <h5><br> Part 1/2 <br class="d-lg-none">「セクションリーダーが選ぶ同響名演ベスト3」<br></h5>
+        <audio src="{% static 'audio/ann/6-1.mp3' %}" type="audio/mp3" controls></audio>
+        <!-- <h5><br>Part 2/2 <br class="d-lg-none">「」<br></h5>
+        <audio src="{% static 'audio/ann/6-2.mp3' %}" type="audio/mp3" controls></audio> -->
+    </div>
+
+</section>
+{% endblock %}
