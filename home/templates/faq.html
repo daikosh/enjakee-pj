@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="contact-section" id="contact">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container text-white-50 p-1 p-sm-3 p-lg-5 fadein wrap">
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-xl-8 col-lg-7">
+                <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/index/thumbnail_faq.jpg' %}" alt="..." />
+            </div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center p-3">
+                    <h4 class="text-white">よくある質問</h4>
+                    <h6 class="text-white-50">
+                        参加型コンテンツへの投稿を募集しています。<br class="d-none d-lg-inline">
+                        コンテンツのご感想なども大歓迎です。<br class="d-none d-lg-inline">
+                        匿名可なのでお気軽にお送りいただけますと幸いです。<br class="d-none d-lg-inline"><br class="d-none d-lg-inline">
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="text-black">
+            <div class="qa-list mts">
+                <dl class="qa">
+                    <dt>縁じゃけえプロジェクトとは？</dt>
+                    <dd>
+                        <p class="text-white">
+                            響介&理香子の結婚式二次会を企画・運営する一年間限定のプロジェクトです。
+                        </p>
+                    </dd>
+                </dl>
+                <dl class="qa">
+                    <dt>同響とは？</dt>
+                    <dd>
+                        <p class="text-white">同志社交響楽団の略称です。</p>
+                    </dd>
+                </dl>
+                <dl class="qa">
+                    <dt>グラコンとは？</dt>
+                    <dd>
+                        <p class="text-white">グランドコンパの略称です。</p>
+                    </dd>
+                </dl>
+            </div>
+    </div>
+</section>
+
+
+{% endblock %}

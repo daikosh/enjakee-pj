@@ -11,6 +11,7 @@ urlpatterns = [
     path('projects/', views.ProjectsView.as_view()),
     path('aboutus/', views.AboutusView.as_view()),
     path('contact/', views.ContactView.as_view()),
+    path('faq/', views.FaqView.as_view()),
     path('projects/timeline/', views.TimelineView.as_view()),
     path('projects/timeline/1/', views.Timeline1View.as_view()),
     path('projects/timeline/2/', views.Timeline2View.as_view()),

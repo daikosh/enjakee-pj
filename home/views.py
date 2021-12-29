@@ -28,6 +28,9 @@ class AboutusView(LoginRequiredMixin, TemplateView):
 class ContactView(LoginRequiredMixin, TemplateView):
     template_name = 'contact.html'
 
+class FaqView(LoginRequiredMixin, TemplateView):
+    template_name = 'faq.html'
+
 class TimelineView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/timeline.html'
 
