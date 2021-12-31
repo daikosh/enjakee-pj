@@ -24,6 +24,7 @@ urlpatterns = [
     path('projects/ann/4/', views.Ann4View.as_view()),
     path('projects/ann/5/', views.Ann5View.as_view()),
     path('projects/ann/6/', views.Ann6View.as_view()),
+    path('projects/ann/6.5/', views.Ann65View.as_view()),
     path('projects/wanko/', views.WankoView.as_view()),
     path('projects/wanko/1/', views.Wanko1View.as_view()),
     path('projects/wanko/2/', views.Wanko2View.as_view()),
@@ -37,5 +38,6 @@ urlpatterns = [
     path('projects/ann0/3/', views.Ann03View.as_view()),
     path('projects/ann0/4/', views.Ann04View.as_view()),
     path('projects/ann0/5/', views.Ann05View.as_view()),
+    path('projects/ann0/6/', views.Ann06View.as_view()),
     path('projects/nyanko/', views.NyankoView.as_view()),
 ]
