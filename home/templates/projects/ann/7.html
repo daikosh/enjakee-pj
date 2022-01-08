@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="ann">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann">ANN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#7</li>
+            </ol>
+        </nav>    
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.jpg' %}" alt="..." />
+    </div>
+
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#7 岐阜は名古屋の植民地スペシャル</h3>
+        <h4>
+            メインパーソナリティー: アゴ<br>
+            ゲスト: 井上あさひ、野上浩輝<br>
+            (2022.1.4 収録) <br><br>
+        </h4>
+        <img src="{% static 'img/projects/ann/radio7.jpg' %}" class="img-fluid">
+        <h5><br>Part 1/2 <br class="d-lg-none">「第一印象が悪いやつほど伸びしろがある (アゴの)。」<br></h5>
+        <audio src="{% static 'audio/ann/7-1.mp3' %}" type="audio/mp3" controls></audio>
+        <!-- <h5><br>Part 2/2 <br class="d-lg-none">「同響100周年記念演奏会を妄想してみた。」<br></h5>
+        <audio src="{% static 'audio/ann/6-2.mp3' %}" type="audio/mp3" controls></audio> -->
+    </div>
+
+</section>
+{% endblock %}
