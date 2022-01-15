@@ -17,13 +17,13 @@
         <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann0/logo_ann0.jpg' %}" alt="..."/>
     </div>
     <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
-        <h3>#6 新年のご挨拶</h3>
-        <h4>出演: 松井、阿久澤、松岡<br></h4>
-        <img src="{% static 'img/projects/ann0/radio6.jpg' %}" class="img-fluid">
+        <h3>#6 <a href="/projects/timeline/5">〈TL第5章〉</a><br class="d-lg-none">One Purpose</h3>
+        <h4>出演: 犬飼、松井、阿久澤<br></h4>
         <p><br></p>
-        <audio src="{% static 'audio/ann0/6.mp3' %}" type="audio/mp3" controls></audio>
+        <video controls controlslist="nodownload">
+            <source src="{% static 'video/ann0_6.mp4' %}" type="video/mp4" poster="{% static 'img/index/thumbnail_trailer.jpg' %}" />
+        </video>
     </div>
-
 
 </section>
 {% endblock %}
