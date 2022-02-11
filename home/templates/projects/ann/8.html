@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="ann">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann">ANN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#8</li>
+            </ol>
+        </nav>    
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.jpg' %}" alt="..." />
+    </div>
+
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#8 【対談企画】修道スペシャル</h3>
+        <h4>
+            メインパーソナリティー: 松井響介<br>
+            ゲスト: 宮本諒 (修道)<br>
+            (2021.11.20 収録) <br><br>
+        </h4>
+        <h5><br>Part 1/2 <br class="d-lg-none">「〈映像の世紀〉悪童伝説〜松井響介の革命は
+            <ruby><rb>修道</rb><rp> (</rp><rt>ここ</rt><rp>) </rp></ruby>
+            からはじまった〜」<br><br></h5>
+        <video controls controlslist="nodownload">
+            <source src="{% static 'video/ann_8.mp4' %}" type="video/mp4" poster="{% static 'img/projects/ann/radio8.jpg' %}" />
+        </video>
+        
+    </div>
+
+</section>
+{% endblock %}
