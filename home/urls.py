@@ -37,6 +37,7 @@ urlpatterns = [
     path('projects/wanko/5/', views.Wanko5View.as_view()),
     path('projects/wanko/6/', views.Wanko6View.as_view()),
     path('projects/wanko/7/', views.Wanko7View.as_view()),
+    path('projects/wanko/8/', views.Wanko8View.as_view()),
     path('projects/ann0/', views.Ann0View.as_view()),
     path('projects/ann0/1/', views.Ann01View.as_view()),
     path('projects/ann0/2/', views.Ann02View.as_view()),
