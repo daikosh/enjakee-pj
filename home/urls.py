@@ -29,6 +29,7 @@ urlpatterns = [
     path('projects/ann/6.5/', views.Ann65View.as_view()),
     path('projects/ann/7/', views.Ann7View.as_view()),
     path('projects/ann/8/', views.Ann8View.as_view()),
+    path('projects/ann/9/', views.Ann9View.as_view()),
     path('projects/wanko/', views.WankoView.as_view()),
     path('projects/wanko/1/', views.Wanko1View.as_view()),
     path('projects/wanko/2/', views.Wanko2View.as_view()),

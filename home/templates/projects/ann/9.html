@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="ann">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann">ANN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#9</li>
+            </ol>
+        </nav>    
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.jpg' %}" alt="..." />
+    </div>
+
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#9 村田ゼミスペシャル</h3>
+        <h4>
+            メインパーソナリティー: アゴ<br>
+            ゲスト: 平尾奈緒、白井萌、阿久澤拓也<br>
+            (2022.2.4 収録) <br><br>
+        </h4>
+        <img src="{% static 'img/projects/ann/radio9.jpg' %}" class="img-fluid">
+        <audio src="{% static 'audio/ann/9.mp3' %}" type="audio/mp3" controls></audio>
+    </div>
+
+</section>
+{% endblock %}
