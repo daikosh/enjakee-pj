@@ -52,6 +52,9 @@ class Timeline5View(LoginRequiredMixin, TemplateView):
 class Timeline6View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/timeline/6.html'
 
+class Timeline7View(LoginRequiredMixin, TemplateView):
+    template_name = 'projects/timeline/7.html'
+
 class AnnView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann.html'
 
@@ -135,6 +138,9 @@ class Ann06View(LoginRequiredMixin, TemplateView):
 
 class Ann07View(LoginRequiredMixin, TemplateView):
     template_name = 'projects/ann0/7.html'
+
+class Ann08View(LoginRequiredMixin, TemplateView):
+    template_name = 'projects/ann0/8.html'
 
 class NyankoView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/nyanko.html'

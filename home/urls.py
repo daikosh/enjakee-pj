@@ -19,6 +19,7 @@ urlpatterns = [
     path('projects/timeline/4/', views.Timeline4View.as_view()),
     path('projects/timeline/5/', views.Timeline5View.as_view()),
     path('projects/timeline/6/', views.Timeline6View.as_view()),
+    path('projects/timeline/7/', views.Timeline7View.as_view()),
     path('projects/ann/', views.AnnView.as_view()),
     path('projects/ann/1/', views.Ann1View.as_view()),
     path('projects/ann/2/', views.Ann2View.as_view()),
@@ -47,5 +48,6 @@ urlpatterns = [
     path('projects/ann0/5/', views.Ann05View.as_view()),
     path('projects/ann0/6/', views.Ann06View.as_view()),
     path('projects/ann0/7/', views.Ann07View.as_view()),
+    path('projects/ann0/8/', views.Ann08View.as_view()),
     path('projects/nyanko/', views.NyankoView.as_view()),
 ]
