@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="ann">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item"><a href="/projects/ann">ANN</a></li>
+                <li class="breadcrumb-item active" aria-current="page">#9</li>
+            </ol>
+        </nav>    
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/ann/logo_ann.jpg' %}" alt="..." />
+    </div>
+
+    <div class="container text-center text-white p-1 p-sm-3 p-lg-5 fadein wrap">
+        <h3>#10 ありがとう犬飼理香子。おめでとう松井理香子。</h3>
+        <h4>
+            メインパーソナリティー: 松井理香子<br>
+            ゲスト: 松井響介<br>
+            (2022.3.13 収録) <br><br>
+        </h4>
+        <img src="{% static 'img/projects/ann/radio10.jpg' %}" class="img-fluid">
+        <audio src="{% static 'audio/ann/10.mp3' %}" type="audio/mp3" controls></audio>
+    </div>
+
+</section>
+{% endblock %}
