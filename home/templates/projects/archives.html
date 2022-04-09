@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block main %}
+
+<section class="projects-section" id="archives">
+    <div class="container fadein wrap">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">アーカイブ</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="container text-center fadein wrap">
+        <img class="img-fluid mb-3 mb-lg-0" src="{% static 'img/projects/thumbnail_archives.png' %}" alt="..." />
+    </div>
+    <div class="container text-center text-white-50 p-1 p-sm-3 p-lg-5 fadein wrap">
+        <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
+            <div class="col-1 col-lg-2"></div>
+            <div class="col-10 col-lg-8">
+                <div class="featured-text text-center">
+                    <h4 class="text-white"></h4>
+                    <h6 class="text-white-50">
+                        当日の結婚式グラコンで使用した動画のアーカイブ。
+                    </h6>
+                </div>
+            </div>
+        </div>
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-10 col-lg-8">
+                <h3>オープニング</h3>
+                <video controls controlslist="nodownload">
+                    <source src="{% static 'video/01_archives_op.mp4' %}" type="video/mp4" />
+                </video>
+                <br><br>
+                <h3>響介王・理香子王</h3>
+                <video controls controlslist="nodownload">
+                    <source src="{% static 'video/02_archives_kings.mp4' %}" type="video/mp4" />
+                </video>
+                <br><br>
+                <h3>エンディング</h3>
+                <video controls controlslist="nodownload">
+                    <source src="{% static 'video/03_archives_ed.mp4' %}" type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+
+{% endblock %}
