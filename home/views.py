@@ -153,3 +153,6 @@ class NyankoView(LoginRequiredMixin, TemplateView):
 
 class ArchivesView(LoginRequiredMixin, TemplateView):
     template_name = 'projects/archives.html'
+
+class RikakoView(LoginRequiredMixin, TemplateView):
+    template_name = 'projects/rikako.html'

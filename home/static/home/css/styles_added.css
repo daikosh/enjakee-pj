@@ -19,6 +19,11 @@
   background: linear-gradient(to bottom, #fff 0%, skyblue);
 }
 
+.rikako-section {
+  padding-top: 5rem;
+  background: black;
+}
+
 .contact-section {
   padding-top: 5rem;
   background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.8) 100%);

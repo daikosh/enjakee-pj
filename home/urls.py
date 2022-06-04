@@ -53,4 +53,5 @@ urlpatterns = [
     path('projects/ann0/8/', views.Ann08View.as_view()),
     path('projects/nyanko/', views.NyankoView.as_view()),
     path('projects/archives/', views.ArchivesView.as_view()),
+    path('projects/rikako/', views.RikakoView.as_view()),
 ]
